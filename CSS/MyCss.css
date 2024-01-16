@@ -1,11 +1,32 @@
-.rp {
+.d_fcc {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.rp-top {
+.d_fcs {
   display: flex;
   justify-content: center;
   align-items: start;
+}
+
+.d_fsc {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.d_fss {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.d_fc {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
 }
