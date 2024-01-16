@@ -1,0 +1,11 @@
+.rp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rp-top {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}

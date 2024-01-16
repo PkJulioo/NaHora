@@ -1,0 +1,119 @@
+<!--
+  bl = bloco
+  bx = box
+  ct = container
+  rp = [Display: flex, align-items: center, justify-content: center]
+  rp = [Display: flex, align-items: start, justify-content: center]
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/headerFooter.css">
+  <link rel="stylesheet" href="CSS/MyCss.css">
+  <link rel="stylesheet" href="responsivo.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-XXX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="box_logo rp"><a href="#" class="logo">Na<span>Hora</span></a></div>
+    <nav class="navbar"></nav> 
+    <div class="ct-account rp">
+        <a href="#" class="login">Entrar</a>
+        <a href="#" class="cadastro">Cadastrar</a>
+    </div>
+  </header>
+
+
+  <section id="tela_one" class="tela rp-top">
+    <div class="fundo_principal">
+       <main class="ct_img_animation rp">
+        <div class="slider">
+          <div class="slide-track">
+            <!--7 Slides iniciais-->
+            <div class="slide"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide"><img src="https://assets.entrepreneur.com/content/3x2/2000/1596472641-Coca-cola.jpg"></div>
+            <div class="slide"><img src="https://www.bakels.com.br/wp-content/uploads/sites/33/2020/12/IMG_1035-WEB.png"></div>
+            <div class="slide"><img src="https://cidadedeniteroi.com/wp-content/uploads/2020/08/Image-1.jpeg"></div>
+            <div class="slide"><img src="https://hamburguerdesucesso.com.br/wp-content/uploads/2021/05/lanches-para-vender-combos.jpg"></div>
+            <div class="slide"><img src="https://aguavivalanches.com.br/images/lanches/lanches-em-londrina-xbacon1.jpg"></div>
+            <div class="slide"><img src="https://4.bp.blogspot.com/-qyjCHGlHtdo/U2dsn-xY6VI/AAAAAAAAABw/2TAgu5b8hV0/s1600/175-x-tudo-hamburger-90g-queijo-presunto-bacon-salada-ovo.png"></div>
+
+            <!--7 Slides apos-->
+            <div class="slide"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+            <div class="slide"><img src="https://centralfrutas.com.br/wp-content/uploads/2021/04/lanches.jpg"></div>
+          </div>
+      </div>
+       </main>
+       <main class="ct_esquerda">
+         <div class="bx-name-produto"><h2 id="name-product">Hamburguer NewYork</h2></div>
+         <div class="bx-options-produto">
+          <p id="options-product">hamburguer, carne, queijo, presunto, alface e molho</p>
+         </div>
+         <div class="bx-score">
+          <div class="box-ratting">
+            <div class="ratting">
+                <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+                <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+                <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+                <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+                <input type="radio" name="clr1" style="--c: rgb(202, 189, 11);">
+            </div>
+            <div class="caixa-score">
+              <div class="mini-caixa bx-score1"><span>1.3</span></div>
+              <div class="mini-caixa bx-score2"><span>(676)</span></div>
+            </div>
+          </div>
+         </div>
+         <div class="bx-filters fl-one">
+          <p class="text-bx1">Acompanhamentos:</p>
+          <div class="select-bx2">
+            <button class="btn-opcao">Queijo <span class="btn-opcao-span">R$2</span><div class="icon-x">X</div></button>
+            <button class="btn-opcao">Alface <span class="btn-opcao-span">R$4</span><div class="icon-x">X</div></button>
+            <button class="btn-opcao">Tomate <span class="btn-opcao-span">R$1</span><div class="icon-x">X</div></i></button>
+          </div>
+         </div>
+         <div class="bx-filters fl-two">
+          <p class="text-bx1">Outros sabores:</p>
+          <div class="select-bx2">
+            <button class="btn-opcao">Calabresa<span class="btn-opcao-span">R$20</span><div class="icon-x">X</div></button>
+            <button class="btn-opcao">Midnight<span class="btn-opcao-span">R$15</span><div class="icon-x">X</div></button>
+            <button class="btn-opcao">Empire<span class="btn-opcao-span">R$23</span><div class="icon-x">X</div></button>
+          </div>
+         </div>
+       </main>
+       <main class="ct_direita">
+         <div class="bx-pagamento">
+          <p class="text-pagar">Preço total R$37</p>
+          <button class="btn-pagar">Pedido</button>
+         </div>
+       </main>
+       <div class="ct_chao"></div>
+    </div>
+  </section>
+
+  <section id="tela_two" class="tela rp">
+    <div class="fundo_principal">
+      <main class="ct_topo"></main>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="/js/handlers/loadBehaviors.js" type="module" params="slider"></script>
+</body>
+</html>

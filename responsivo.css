@@ -1,0 +1,133 @@
+@media screen and (max-width: 600px) { /*dispositivos móveis*/
+  
+  .fundo_principal {
+    width: 100%;
+    grid-template-areas: /*serve para definir o layout de forma prática*/
+    'ct_img_animation ct_img_animation ct_img_animation'
+    'ct_esquerda ct_esquerda ct_esquerda'
+    'ct_direita ct_direita ct_direita';
+  }
+  
+  .ct_img_animation {
+    width: 100vw;
+    height: 30vh;
+  }
+  
+  .ct_esquerda {
+    height: 45vh;
+  }
+  
+  .ct_direita {
+    height: 17vh;
+    justify-content: start;
+  }
+
+  .bx-pagamento {
+    height: 90%;
+    width: 300px;
+    justify-content: center;
+  }
+
+  .text-pagar {
+    font-size: 1.6rem;
+  }
+
+  .btn-pagar {
+    width: auto;
+    min-height: auto;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-opcao {
+    margin: 0px 2px;
+    padding: 5px;
+    font-size: 0.6em;
+  }
+
+  #name-product {
+    font-size: 1.6em;
+  }
+
+  .icon-x {
+    min-width: 10px;
+    min-height: 10px;
+  }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) { /*iPads, tablets*/
+  
+  .fundo_principal {
+    width: 100%;
+  }
+  
+  .ct_img_animation {
+  }
+  
+  .ct_esquerda {
+    
+  }
+  
+  .ct_direita {
+    
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /*telas pequenas, laptops*/
+  
+  .fundo_principal {
+    width: 100%;
+  }
+  
+  .ct_img_animation {
+  }
+  
+  .ct_esquerda {
+    
+  }
+  
+  .ct_direita {
+    
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) { /*laptops, telas médias*/
+
+  .fundo_principal {
+    width: 100%;
+  }
+  
+  .ct_img_animation {
+  }
+  
+  .ct_esquerda {
+    
+  }
+  
+  .ct_direita {
+    
+  }
+}
+
+@media screen and (min-width: 1201px) { /*telas grandes, TVs*/
+
+  .fundo_principal {
+    
+  }
+  
+  .ct_img_animation {
+    
+  }
+  
+  .ct_esquerda {
+    
+  }
+  
+  .ct_direita {
+    
+  }
+}

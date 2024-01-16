@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  overflow-y: visible;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+#tela_one {
+  background-color: rgb(255, 255, 255);
+  height: 90%;
+  width: 100%;
+}
+
+.fundo_principal {
+  height: 100%;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-areas: /*serve para definir o layout de forma prática*/
+    'ct_img_animation ct_img_animation ct_img_animation'
+    'ct_esquerda ct_esquerda ct_direita'
+    'ct_chao ct_chao ct_chao'; 
+}
+
+.ct_img_animation {
+  background-color: rgb(255, 255, 255);
+  grid-area: ct_img_animation;
+  height: 37vh;
+}
+
+.ct_esquerda {
+  background-color: transparent;
+  grid-area: ct_esquerda;
+  height: 46vh;
+}
+
+.ct_direita {
+  background-color: transparent;
+  grid-area: ct_direita;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  height: 46vh;
+}
+
+.ct_chao {
+  width: 100%;
+  background-color: transparent;
+  height: 7vh;
+  grid-area: ct_chao;
+}
+
+.bx-name-produto {
+  background-color: transparent;
+  max-width: 450px;
+  height: 7vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 4px;
+}
+
+.bx-options-produto {
+  background-color: transparent;
+  max-width: 450px;
+  min-height: 6vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 4px;
+}
+
+.bx-score {
+  background-color: transparent;
+  width: 320px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+} 
+
+.bx-filters {
+  background-color: transparent;
+  max-width: 600px;
+  height: 13vh;
+}
+
+#name-product {
+  font-size: 1.9rem;
+}
+
+#options-product {
+  font-size: 1rem;
+}
+
+.box-ratting {
+  width: 90%;
+  min-height: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.ratting {
+  width: auto;
+  height: auto;
+  flex-direction: row-reverse; /*Para ajustar o lado de animacao da cor da star.*/
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  padding: 1px;
+  background-color: transparent;
+}
+
+.box-ratting input {
+  position: relative;
+  width: 10vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  margin-left: 3px;
+}
+
+.box-ratting input::before {
+  content: '\f005';
+  font-family: fontAwesome;
+  font-size: 23px;
+  position: absolute;
+  color: rgba(197, 197, 181, 0.76);
+  transition: 0.5s;
+}
+
+.box-ratting input:hover ~ input::before,
+.box-ratting input:hover::before,
+.box-ratting input:checked ~ input::before,
+.box-ratting input:checked::before {
+  color: var(--c);
+}
+
+.caixa-score {
+  min-width: 36%;
+  height: 80%;
+  margin-left: 7px;
+  display: flex;
+}
+
+.mini-caixa {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  color: rgb(0, 0, 0);
+  font-size: 1.3em;
+}
+
+.bx-score1 {
+  background-color: none;
+  width: 35%;
+}
+
+.bx-score2 {
+  width: 65%;
+  height: auto;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+
+.bx-pagamento {
+  width: 210px;
+  max-height: 28vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.text-pagar {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.btn-pagar {
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgb(20, 182, 15);
+  font-size: 1.4rem;
+}
+
+.select-bx2 {
+  display: flex;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+.btn-opcao {
+  width: auto;
+  height: auto;
+  background-color: rgba(141, 184, 181, 0.276);
+  margin: 0px 3px;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+}
+
+.btn-opcao-span {
+  margin-left: 5px;
+}
+
+.btn-opcao:hover {
+  background-color: rgba(62, 108, 177, 0.349);
+}
+
+.btn-opcao-span {
+  margin-left: 5px;
+}
+
+.btn-opcao.btn-opcao-selecionado {
+  background: rgb(9,23,50);
+  background: linear-gradient(295deg, rgba(9,23,50,1) 0%, rgba(17,63,110,1) 35%, rgb(119, 168, 196) 69%, rgb(93, 155, 206) 100%);
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+}
+
+.btn-opcao.btn-opcao-selecionado .btn-opcao-span {
+  color: rgb(73, 255, 2);
+  transition: all 0.5s;
+}
+
+.btn-desfazer-icon {
+  margin-left: 5px;
+}
+
+.icon-x {
+  width: 13px;
+  height: 13px;
+  background-color: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana;
+  font-size: 10px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  display: none;
+}
+
+.icon-x:hover {
+  color: rgb(29, 157, 17);
+}
+
+
+
+.slider {
+  height: 100%;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: auto;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(430px * 20);
+  background-color: rgba(0, 0, 0, 0);
+  animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-390px * 3));
+  }
+}
+
+.slide {
+  height: 290px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%; 
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: translateZ(15px);
+}
+
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0; /*Onde ocorre o bug de imagem saindo */
+  top: 0;
+}
+
+.slider::after {
+  right: -1px;
+  top: 0;
+  transform: rotateZ(180deg);
+}
