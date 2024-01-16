@@ -1,9 +1,15 @@
+:root {
+  --gradient-header: linear-gradient(90deg, rgba(3, 2, 28, 0.459) 0%, rgb(98, 98, 202) 38%, rgba(0,212,255,1) 100%);
+  --gradient-btn-pagar: linear-gradient(90deg, rgb(41, 209, 7) 0%, rgb(120, 190, 120) 46%, rgba(42, 161, 12, 0.685) 100%);
+  --white: #fff;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 100%;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
   overflow-y: visible;
 }
 
@@ -23,84 +29,11 @@ section {
   height: 100vh;
 }
 
+
+/*ID`s*/
 #tela_one {
-  background-color: rgb(255, 255, 255);
   height: 90%;
   width: 100%;
-}
-
-.fundo_principal {
-  height: 100%;
-  width: 80%;
-  background-color: rgb(255, 255, 255);
-  display: grid;
-  grid-template-areas: /*serve para definir o layout de forma prática*/
-    'ct_img_animation ct_img_animation ct_img_animation'
-    'ct_esquerda ct_esquerda ct_direita'
-    'ct_chao ct_chao ct_chao'; 
-}
-
-.ct_img_animation {
-  background-color: rgb(255, 255, 255);
-  grid-area: ct_img_animation;
-  height: 37vh;
-}
-
-.ct_esquerda {
-  background-color: transparent;
-  grid-area: ct_esquerda;
-  height: 46vh;
-}
-
-.ct_direita {
-  background-color: transparent;
-  grid-area: ct_direita;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  flex-direction: column;
-  height: 46vh;
-}
-
-.ct_chao {
-  width: 100%;
-  background-color: transparent;
-  height: 7vh;
-  grid-area: ct_chao;
-}
-
-.bx-name-produto {
-  background-color: transparent;
-  max-width: 450px;
-  height: 7vh;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 4px;
-}
-
-.bx-options-produto {
-  background-color: transparent;
-  max-width: 450px;
-  min-height: 6vh;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 4px;
-}
-
-.bx-score {
-  background-color: transparent;
-  width: 320px;
-  height: 8vh;
-  display: flex;
-  align-items: center;
-} 
-
-.bx-filters {
-  background-color: transparent;
-  max-width: 600px;
-  height: 13vh;
 }
 
 #name-product {
@@ -111,40 +44,100 @@ section {
   font-size: 1rem;
 }
 
+/*Tela de 80%*/
+.fundo_principal {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-areas: /*serve para definir o layout de forma prática*/
+    'ct_img_animation ct_img_animation ct_img_animation'
+    'ct_esquerda ct_esquerda ct_direita'
+    'ct_chao ct_chao ct_chao'; 
+}
+
+
+/*Containers*/
+.ct_img_animation {
+  grid-area: ct_img_animation;
+  height: 37vh;
+}
+
+.ct_esquerda {
+  grid-area: ct_esquerda;
+  height: 46vh;
+}
+
+.ct_direita {
+  grid-area: ct_direita;
+  justify-content: end;
+  height: 46vh;
+}
+
+.ct_chao {
+  width: 100%;
+  height: 7vh;
+  grid-area: ct_chao;
+}
+
+
+/*Box`s*/
+.bx-name-produto {
+  max-width: 450px;
+  height: 7vh;
+  padding: 4px;
+}
+
+.bx-options-produto {
+  max-width: 450px;
+  min-height: 6vh;
+  padding: 4px;
+}
+
+.bx-score {
+  width: 320px;
+  height: 8vh;
+} 
+
+.bx-filters {
+  width: auto;
+  max-height: 13vh;
+  flex-wrap: wrap;
+}
+
+.bx-score1 {
+  background-color: none;
+  width: 35%;
+}
+
+.bx-score2 {
+  width: 65%;
+  height: auto;
+  font-size: 0.9rem;
+}
+
+.bx-pagamento {
+  min-width: 220px;
+  max-height: 28vh;
+  padding: 3px;
+}
+
 .box-ratting {
   width: 90%;
   min-height: 80%;
   margin-top: 20px;
   margin-bottom: 20px;
   position: relative;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-
-.ratting {
-  width: auto;
-  height: auto;
-  flex-direction: row-reverse; /*Para ajustar o lado de animacao da cor da star.*/
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  position: relative;
-  padding: 1px;
-  background-color: transparent;
 }
 
 .box-ratting input {
   position: relative;
   width: 10vw;
   height: 5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
   margin-left: 3px;
+  justify-content: center;
 }
 
 .box-ratting input::before {
@@ -163,6 +156,37 @@ section {
   color: var(--c);
 }
 
+/*outros elementos*/
+.espaço-filters {
+  width: auto;
+  height: 7%;
+}
+
+.text-pagar {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.select-bx2 {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+
+/*Score*/
+.ratting {
+  width: auto;
+  height: auto;
+  flex-direction: row-reverse; /*Para ajustar o lado de animacao da cor da star.*/
+  justify-content: space-evenly;
+  position: relative;
+  padding: 1px;
+}
+
 .caixa-score {
   min-width: 36%;
   height: 80%;
@@ -172,59 +196,19 @@ section {
 
 .mini-caixa {
   height: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: start;
   color: rgb(0, 0, 0);
   font-size: 1.3em;
 }
 
-.bx-score1 {
-  background-color: none;
-  width: 35%;
-}
 
-.bx-score2 {
-  width: 65%;
-  height: auto;
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: start;
-  align-items: start;
-}
-
-
-.bx-pagamento {
-  width: 210px;
-  max-height: 28vh;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 3px;
-}
-
-.text-pagar {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
+/*Botoes*/
 .btn-pagar {
   width: 150px;
   height: 40px;
   border-radius: 50px;
-  background-color: rgb(20, 182, 15);
+  border: 2px solid black;
+  background: var(--gradient-btn-pagar);
   font-size: 1.4rem;
-}
-
-.select-bx2 {
-  display: flex;
-  width: auto;
-  height: auto;
-  background-color: transparent;
-  margin-top: 5px;
 }
 
 .btn-opcao {
@@ -235,7 +219,7 @@ section {
   border-radius: 20px;
   border: 2px solid black;
   padding: 5px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 1px;
   display: flex;
@@ -256,7 +240,7 @@ section {
 .btn-opcao.btn-opcao-selecionado {
   background: rgb(9,23,50);
   background: linear-gradient(295deg, rgba(9,23,50,1) 0%, rgba(17,63,110,1) 35%, rgb(119, 168, 196) 69%, rgb(93, 155, 206) 100%);
-  color: rgb(255, 255, 255);
+  color: var(--white);
   transition: all 0.3s;
 }
 
@@ -269,15 +253,12 @@ section {
   margin-left: 5px;
 }
 
-.icon-x {
+.icon-x{
   width: 13px;
   height: 13px;
   background-color: none;
   color: rgb(255, 255, 255);
   font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: Verdana;
   font-size: 10px;
   margin-left: 5px;
@@ -290,7 +271,7 @@ section {
 }
 
 
-
+/*Slider Infinito*/
 .slider {
   height: 100%;
   margin: auto;
@@ -325,8 +306,6 @@ section {
 .slide {
   height: 290px;
   width: 400px;
-  display: flex;
-  align-items: center;
   padding: 15px;
   perspective: 100px;
   overflow: hidden;
