@@ -1,23 +1,28 @@
 /*Para definir largura*/
-@media screen and (max-width: 600px) { /*dispositivos móveis*/
-  
-  .fundo_principal {
+@media screen and (max-width: 600px) {
+  /*dispositivos móveis*/
+
+  .fundo_principal1 {
     width: 100%;
     grid-template-areas: /*serve para definir o layout de forma prática*/
-    'ct_img_animation ct_img_animation ct_img_animation'
-    'ct_esquerda ct_esquerda ct_esquerda'
-    'ct_direita ct_direita ct_direita';
+      "ct_img_animation ct_img_animation ct_img_animation"
+      "ct_esquerda ct_esquerda ct_esquerda"
+      "ct_direita ct_direita ct_direita";
   }
-  
+
+  .fundo_principal2 {
+    width: 100%;
+  }
+
   .ct_img_animation {
     width: 100vw;
     height: 30vh;
   }
-  
+
   .ct_esquerda {
     height: 45vh;
   }
-  
+
   .ct_direita {
     height: 17vh;
     justify-content: start;
@@ -58,23 +63,47 @@
     min-height: 3px;
   }
 
+  .bx-produtos {
+    width: 600px;
+  }
+
+  .bx-button-left,
+  .bx-button-right {
+    min-width: 45px;
+  }
+
+  .titulo-pages {
+    font-size: 1.3em;
+  }
+
+  .bx-pages-bar {
+    height: 50px;
+  }
+
+  .bl-pages {
+    height: 45px;
+  }
+
+  .pages {
+    white-space: nowrap; /* Impede que as imagens quebrem para a próxima linha */
+    font-size: 0.8em;
+  }
 }
 
-@media screen and (min-width: 601px) and (max-width: 768px) { /*iPads, tablets*/
-  
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  /*iPads, tablets*/
+
   .fundo_principal {
     width: 100%;
   }
-  
+
   .ct_img_animation {
   }
-  
+
   .ct_esquerda {
-    
   }
-  
+
   .ct_direita {
-    
   }
 
   .text-pagar {
@@ -82,65 +111,58 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) { /*telas pequenas, laptops*/
-  
-  .fundo_principal {
-    width: 80%;
-  }
-  
-  .ct_img_animation {
-  }
-  
-  .ct_esquerda {
-    
-  }
-  
-  .ct_direita {
-    
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) { /*laptops, telas médias*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*telas pequenas, laptops*/
 
   .fundo_principal {
     width: 80%;
   }
-  
+
   .ct_img_animation {
   }
-  
+
   .ct_esquerda {
-    
   }
-  
+
   .ct_direita {
-    
   }
 }
 
-@media screen and (min-width: 1201px) { /*telas grandes, TVs*/
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /*laptops, telas médias*/
 
   .fundo_principal {
-    
+    width: 80%;
   }
-  
+
   .ct_img_animation {
-    
   }
-  
+
   .ct_esquerda {
-    
   }
-  
+
   .ct_direita {
-    
   }
 }
 
+@media screen and (min-width: 1201px) {
+  /*telas grandes, TVs*/
+
+  .fundo_principal {
+  }
+
+  .ct_img_animation {
+  }
+
+  .ct_esquerda {
+  }
+
+  .ct_direita {
+  }
+}
 
 /*Para definir altura*/
 @media screen and (max-height: 559px) and (max-width: 880px) {
-  
   .logo {
     font-size: 1.4rem;
   }
@@ -181,7 +203,7 @@
     width: auto;
     height: auto;
     display: none;
-  }  
+  }
 
   .bx-filters {
     width: auto;
@@ -218,7 +240,7 @@
     height: 10vh;
     flex-wrap: wrap;
   }
-  
+
   .espaço-filters {
     width: auto;
     height: auto;
@@ -237,5 +259,4 @@
     height: 15vh;
     padding: 1px;
   }
-
 }
